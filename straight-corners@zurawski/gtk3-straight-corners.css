@@ -1,0 +1,312 @@
+/**
+ * Straight Corners - GTK3 Stylesheet
+ * 
+ * Removes rounded corners from GTK3 applications.
+ * This file is managed by the Straight Corners GNOME Shell extension.
+ * 
+ * DO NOT EDIT MANUALLY - Changes will be overwritten.
+ * 
+ * @author zurawski
+ * @license GPL-3.0
+ */
+
+/* ============================================
+ * WINDOWS AND DECORATIONS
+ * ============================================ */
+
+window,
+window.background,
+window.dialog,
+window.messagedialog,
+window.csd,
+window.solid-csd,
+.window-frame,
+.window-frame:backdrop {
+    border-radius: 0;
+}
+
+decoration,
+decoration:backdrop {
+    border-radius: 0;
+}
+
+.titlebar,
+.titlebar:backdrop,
+headerbar,
+headerbar:backdrop,
+.header-bar,
+.header-bar:backdrop {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* ============================================
+ * BUTTONS
+ * ============================================ */
+
+button,
+button:hover,
+button:active,
+button:focus,
+button:checked,
+button:disabled,
+button.flat,
+button.flat:hover,
+button.flat:active,
+button.circular,
+button.circular:hover,
+button.suggested-action,
+button.suggested-action:hover,
+button.destructive-action,
+button.destructive-action:hover,
+button.osd,
+button.osd:hover,
+.button,
+.button:hover,
+.button:active {
+    border-radius: 0;
+}
+
+/* Window control buttons */
+.titlebutton,
+.titlebutton:hover,
+.titlebutton:active,
+.titlebutton:backdrop,
+button.titlebutton,
+button.titlebutton:hover,
+button.titlebutton:active,
+button.titlebutton:backdrop,
+button.titlebutton.close,
+button.titlebutton.close:hover,
+button.titlebutton.close:active,
+button.titlebutton.maximize,
+button.titlebutton.maximize:hover,
+button.titlebutton.maximize:active,
+button.titlebutton.minimize,
+button.titlebutton.minimize:hover,
+button.titlebutton.minimize:active,
+headerbar button.titlebutton,
+headerbar button.titlebutton:hover,
+headerbar button.titlebutton:active,
+headerbar .titlebutton,
+headerbar .titlebutton:hover,
+headerbar .titlebutton:active,
+.titlebar button.titlebutton,
+.titlebar .titlebutton,
+.titlebar .titlebutton:hover,
+.titlebar .titlebutton:active {
+    border-radius: 0 !important;
+}
+
+/* ============================================
+ * ENTRIES AND INPUTS
+ * ============================================ */
+
+entry,
+entry:focus,
+entry:disabled,
+.entry,
+.entry:focus,
+searchentry,
+searchentry:focus,
+spinbutton,
+spinbutton:focus,
+spinbutton button {
+    border-radius: 0;
+}
+
+/* ============================================
+ * SWITCHES AND TOGGLES
+ * ============================================ */
+
+switch,
+switch:hover,
+switch:checked,
+switch:disabled,
+switch slider,
+switch slider:hover,
+checkbutton check,
+checkbutton check:hover,
+checkbutton check:checked,
+checkbutton check:indeterminate,
+radiobutton radio,
+radiobutton radio:hover,
+radiobutton radio:checked,
+check,
+check:hover,
+check:checked,
+radio,
+radio:hover,
+radio:checked {
+    border-radius: 0;
+}
+
+/* ============================================
+ * MENUS AND POPOVERS
+ * ============================================ */
+
+popover,
+popover.background,
+.popover,
+.popover.background,
+menu,
+.menu,
+menuitem,
+.menuitem,
+.context-menu,
+.popup {
+    border-radius: 0;
+}
+
+/* ============================================
+ * DIALOGS AND MESSAGES
+ * ============================================ */
+
+.dialog-content-box,
+.message-area,
+messagedialog .response-area,
+messagedialog .message-area,
+dialog .dialog-action-box,
+infobar,
+infobar:hover,
+infobar.info,
+infobar.warning,
+infobar.error,
+infobar.question {
+    border-radius: 0;
+}
+
+/* ============================================
+ * LISTS AND ROWS
+ * ============================================ */
+
+list,
+list row,
+list row:hover,
+list row:selected,
+.sidebar,
+.sidebar row,
+.sidebar row:hover,
+.sidebar row:selected,
+treeview,
+treeview.view,
+treeview.view:hover,
+treeview.view:selected,
+row,
+row:hover,
+row:selected {
+    border-radius: 0;
+}
+
+/* ============================================
+ * TABS AND NOTEBOOKS
+ * ============================================ */
+
+notebook,
+notebook header,
+notebook header tabs,
+notebook header tabs tab,
+notebook header tabs tab:hover,
+notebook header tabs tab:checked,
+.notebook,
+.tab,
+.tab:hover,
+.tab:checked {
+    border-radius: 0;
+}
+
+/* ============================================
+ * SCALE AND SLIDERS
+ * ============================================ */
+
+scale,
+scale slider,
+scale slider:hover,
+scale slider:active,
+scale trough,
+scale highlight,
+progressbar,
+progressbar trough,
+progressbar progress,
+levelbar,
+levelbar trough,
+levelbar block {
+    border-radius: 0;
+}
+
+/* ============================================
+ * TOOLTIPS
+ * ============================================ */
+
+tooltip,
+tooltip.background,
+.tooltip,
+.tooltip.background {
+    border-radius: 0;
+}
+
+/* ============================================
+ * TOOLBAR AND ACTIONBAR
+ * ============================================ */
+
+toolbar,
+.toolbar,
+actionbar,
+.action-bar,
+.primary-toolbar,
+.inline-toolbar {
+    border-radius: 0;
+}
+
+/* ============================================
+ * MISCELLANEOUS
+ * ============================================ */
+
+.linked > button,
+.linked > button:hover,
+.linked > button:active,
+.linked > button:first-child,
+.linked > button:last-child,
+.linked > entry,
+.linked > entry:first-child,
+.linked > entry:last-child {
+    border-radius: 0;
+}
+
+scrollbar,
+scrollbar slider,
+scrollbar slider:hover,
+scrollbar slider:active,
+.scrollbar,
+.scrollbar slider {
+    border-radius: 0;
+}
+
+frame,
+frame > border,
+.frame,
+.frame > border {
+    border-radius: 0;
+}
+
+.osd,
+.osd:hover,
+.floating-bar {
+    border-radius: 0;
+}
+
+.app-notification,
+.notification {
+    border-radius: 0;
+}
+
+/* Firefox specific */
+#MozillaGtkWidget > widget,
+#MozillaGtkWidget > widget > *,
+#MozillaGtkWidget button,
+#MozillaGtkWidget entry,
+#MozillaGtkWidget menu,
+#MozillaGtkWidget menuitem {
+    border-radius: 0;
+}

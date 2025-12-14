@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="straight-corners">
+    <schema id="org.gnome.shell.extensions.straight-corners" path="/org/gnome/shell/extensions/straight-corners/">
+
+        <!-- Window corners -->
+        <key name="windows-enabled" type="b">
+            <default>true</default>
+            <summary>Remove window corners</summary>
+            <description>Remove rounded corners from application windows, dialogs, and window decorations.</description>
+        </key>
+
+        <!-- Panel corners -->
+        <key name="panel-enabled" type="b">
+            <default>true</default>
+            <summary>Remove panel corners</summary>
+            <description>Remove rounded corners from the top panel and its buttons.</description>
+        </key>
+
+        <!-- Button corners -->
+        <key name="buttons-enabled" type="b">
+            <default>true</default>
+            <summary>Remove button corners</summary>
+            <description>Remove rounded corners from buttons throughout the GNOME Shell.</description>
+        </key>
+
+        <!-- Dialog corners -->
+        <key name="dialogs-enabled" type="b">
+            <default>true</default>
+            <summary>Remove dialog corners</summary>
+            <description>Remove rounded corners from modal dialogs and prompts.</description>
+        </key>
+
+        <!-- Overview corners -->
+        <key name="overview-enabled" type="b">
+            <default>true</default>
+            <summary>Remove overview corners</summary>
+            <description>Remove rounded corners from overview elements like search bar and app icons.</description>
+        </key>
+
+        <!-- Notification corners -->
+        <key name="notifications-enabled" type="b">
+            <default>true</default>
+            <summary>Remove notification corners</summary>
+            <description>Remove rounded corners from notifications and banners.</description>
+        </key>
+
+        <!-- Menu corners -->
+        <key name="menus-enabled" type="b">
+            <default>true</default>
+            <summary>Remove menu corners</summary>
+            <description>Remove rounded corners from popup menus, context menus, and quick settings.</description>
+        </key>
+
+        <!-- OSD corners -->
+        <key name="osd-enabled" type="b">
+            <default>true</default>
+            <summary>Remove OSD corners</summary>
+            <description>Remove rounded corners from on-screen displays (volume, brightness, etc.).</description>
+        </key>
+
+        <!-- Dash corners -->
+        <key name="dash-enabled" type="b">
+            <default>true</default>
+            <summary>Remove dash corners</summary>
+            <description>Remove rounded corners from the dash (dock) and its app icons.</description>
+        </key>
+
+        <!-- Calendar corners -->
+        <key name="calendar-enabled" type="b">
+            <default>true</default>
+            <summary>Remove calendar corners</summary>
+            <description>Remove rounded corners from the calendar and date menu elements.</description>
+        </key>
+
+        <!-- Lock screen corners -->
+        <key name="lock-screen-enabled" type="b">
+            <default>true</default>
+            <summary>Remove lock screen corners</summary>
+            <description>Remove rounded corners from lock screen and login dialog elements.</description>
+        </key>
+
+        <!-- Tooltip corners -->
+        <key name="tooltips-enabled" type="b">
+            <default>true</default>
+            <summary>Remove tooltip corners</summary>
+            <description>Remove rounded corners from tooltips and labels.</description>
+        </key>
+
+        <!-- Entry corners -->
+        <key name="entries-enabled" type="b">
+            <default>true</default>
+            <summary>Remove entry corners</summary>
+            <description>Remove rounded corners from text entries and input fields.</description>
+        </key>
+
+        <!-- Switch corners -->
+        <key name="switches-enabled" type="b">
+            <default>true</default>
+            <summary>Remove switch corners</summary>
+            <description>Remove rounded corners from toggle switches and sliders.</description>
+        </key>
+
+        <!-- GTK4 Applications (separate from GNOME Shell) -->
+        <key name="gtk4-apps-enabled" type="b">
+            <default>false</default>
+            <summary>Remove GTK4 application corners</summary>
+            <description>Remove rounded corners from GTK4 applications like Settings, Files, Extensions, etc. This modifies ~/.config/gtk-4.0/gtk.css and requires applications to be restarted to take effect.</description>
+        </key>
+
+        <!-- GTK3 Applications (separate from GNOME Shell) -->
+        <key name="gtk3-apps-enabled" type="b">
+            <default>false</default>
+            <summary>Remove GTK3 application corners</summary>
+            <description>Remove rounded corners from GTK3 applications like Firefox, etc. This modifies ~/.config/gtk-3.0/gtk.css and requires applications to be restarted to take effect.</description>
+        </key>
+
+    </schema>
+</schemalist>

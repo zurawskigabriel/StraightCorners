@@ -1,0 +1,438 @@
+/**
+ * Straight Corners - GTK4 Stylesheet
+ *
+ * Removes rounded corners from GTK4/Adwaita applications.
+ * This file is managed by the Straight Corners GNOME Shell extension.
+ *
+ * DO NOT EDIT MANUALLY - Changes will be overwritten.
+ *
+ * @author zurawski
+ * @license GPL-3.0
+ */
+
+/* ============================================
+ * WINDOWS AND DECORATIONS
+ * ============================================ */
+
+window,
+window.background,
+window.dialog,
+window.messagedialog,
+window.aboutdialog,
+window.solid-csd,
+window.csd,
+dialog,
+messagedialog,
+aboutdialog {
+    border-radius: 0;
+}
+
+decoration,
+decoration:backdrop {
+    border-radius: 0;
+}
+
+.titlebar,
+.titlebar:backdrop,
+headerbar,
+headerbar:backdrop,
+.header-bar,
+.header-bar:backdrop {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* ============================================
+ * BUTTONS
+ * ============================================ */
+
+button,
+button:hover,
+button:active,
+button:focus,
+button:checked,
+button:disabled,
+button.flat,
+button.flat:hover,
+button.flat:active,
+button.circular,
+button.circular:hover,
+button.circular:active,
+button.pill,
+button.pill:hover,
+button.pill:active,
+button.suggested-action,
+button.suggested-action:hover,
+button.destructive-action,
+button.destructive-action:hover,
+button.osd,
+button.osd:hover,
+button.image-button,
+button.image-button:hover,
+button.text-button,
+button.text-button:hover,
+button.toggle,
+button.toggle:hover,
+button.toggle:checked {
+    border-radius: 0;
+}
+
+/* Window control buttons */
+windowcontrols button,
+windowcontrols button:hover,
+windowcontrols button:active,
+windowcontrols > button,
+windowcontrols > button:hover,
+windowcontrols > button:active,
+windowcontrols > button.close,
+windowcontrols > button.close:hover,
+windowcontrols > button.close:active,
+windowcontrols > button.maximize,
+windowcontrols > button.maximize:hover,
+windowcontrols > button.maximize:active,
+windowcontrols > button.minimize,
+windowcontrols > button.minimize:hover,
+windowcontrols > button.minimize:active,
+.titlebutton,
+.titlebutton:hover,
+.titlebutton:active,
+.titlebutton:backdrop,
+button.titlebutton,
+button.titlebutton:hover,
+button.titlebutton:active,
+button.titlebutton:backdrop,
+button.close,
+button.close:hover,
+button.close:active,
+button.maximize,
+button.maximize:hover,
+button.maximize:active,
+button.minimize,
+button.minimize:hover,
+button.minimize:active,
+headerbar button.titlebutton,
+headerbar button.titlebutton:hover,
+headerbar button.titlebutton:active,
+headerbar windowcontrols button,
+headerbar windowcontrols button:hover,
+headerbar windowcontrols button:active,
+.titlebar button.titlebutton,
+.titlebar button.titlebutton:hover,
+.titlebar button.titlebutton:active,
+.titlebar windowcontrols button,
+.titlebar windowcontrols button:hover,
+.titlebar windowcontrols button:active {
+    border-radius: 0 !important;
+}
+
+/* ============================================
+ * ENTRIES AND INPUTS
+ * ============================================ */
+
+entry,
+entry:focus,
+entry:disabled,
+searchentry,
+searchentry:focus,
+passwordentry,
+passwordentry:focus,
+spinbutton,
+spinbutton:focus,
+.entry,
+.entry:focus {
+    border-radius: 0;
+}
+
+/* ============================================
+ * SWITCHES AND TOGGLES
+ * ============================================ */
+
+switch,
+switch:hover,
+switch:checked,
+switch:disabled,
+switch slider,
+switch slider:hover,
+switch slider:checked,
+checkbutton check,
+checkbutton check:hover,
+checkbutton check:checked,
+checkbutton check:indeterminate,
+radiobutton radio,
+radiobutton radio:hover,
+radiobutton radio:checked,
+check,
+check:hover,
+check:checked,
+check:indeterminate,
+radio,
+radio:hover,
+radio:checked {
+    border-radius: 0;
+}
+
+/* ============================================
+ * MENUS AND POPOVERS
+ * ============================================ */
+
+popover,
+popover.background,
+popover > contents,
+popover > arrow,
+popover.menu,
+popover.menu > contents,
+menu,
+menuitem,
+menuitem:hover,
+.menu,
+.menuitem,
+.context-menu,
+.popup {
+    border-radius: 0;
+}
+
+/* ============================================
+ * DIALOGS AND MESSAGES
+ * ============================================ */
+
+.dialog-content-box,
+.message-area,
+messagedialog .response-area,
+messagedialog .message-area,
+dialog .dialog-action-box,
+infobar,
+infobar:hover,
+infobar.info,
+infobar.warning,
+infobar.error,
+infobar.question {
+    border-radius: 0;
+}
+
+/* ============================================
+ * LISTS AND ROWS
+ * ============================================ */
+
+list,
+list row,
+list row:hover,
+list row:selected,
+listview,
+listview > row,
+listview > row:hover,
+listview > row:selected,
+.navigation-sidebar row,
+.navigation-sidebar row:hover,
+.navigation-sidebar row:selected,
+.boxed-list,
+.boxed-list row,
+row,
+row:hover,
+row:selected,
+row.activatable,
+row.activatable:hover {
+    border-radius: 0;
+}
+
+/* ============================================
+ * ADWAITA SPECIFIC WIDGETS
+ * ============================================ */
+
+/* Preferences window */
+preferencespage,
+preferencesgroup,
+preferencesrow,
+.preferences-page,
+.preferences-group {
+    border-radius: 0;
+}
+
+/* Action rows */
+row.expander,
+row.expander list,
+row.expander image.expander-row-arrow,
+.property-row,
+.action-row,
+.combo-row,
+.spin-row,
+.switch-row,
+.entry-row {
+    border-radius: 0;
+}
+
+/* Cards and containers */
+.card,
+.card:hover,
+.osd,
+.osd:hover,
+.floating-bar,
+.toolbar,
+.action-bar,
+.content,
+.sidebar,
+.sidebar-pane,
+.content-pane {
+    border-radius: 0;
+}
+
+/* ============================================
+ * TABS AND NOTEBOOKS
+ * ============================================ */
+
+notebook,
+notebook > header,
+notebook > header > tabs,
+notebook > header > tabs > tab,
+notebook > header > tabs > tab:hover,
+notebook > header > tabs > tab:checked,
+tabbar,
+tabbar tab,
+tabbar tab:hover,
+tabbar tab:checked,
+.tab,
+.tab:hover,
+.tab:checked {
+    border-radius: 0;
+}
+
+/* ============================================
+ * SCALE AND SLIDERS
+ * ============================================ */
+
+scale,
+scale slider,
+scale slider:hover,
+scale slider:active,
+scale trough,
+scale highlight,
+progressbar,
+progressbar trough,
+progressbar progress,
+levelbar,
+levelbar trough,
+levelbar block {
+    border-radius: 0;
+}
+
+/* ============================================
+ * TOOLTIPS
+ * ============================================ */
+
+tooltip,
+tooltip.background,
+.tooltip,
+.tooltip.background {
+    border-radius: 0;
+}
+
+/* ============================================
+ * NOTIFICATIONS AND TOASTS
+ * ============================================ */
+
+.message,
+.toast,
+toast,
+toast > widget,
+.notification,
+.app-notification {
+    border-radius: 0;
+}
+
+/* ============================================
+ * MISCELLANEOUS
+ * ============================================ */
+
+.linked > button,
+.linked > button:hover,
+.linked > button:active,
+.linked > button:first-child,
+.linked > button:last-child,
+.linked > button:only-child,
+.linked > entry,
+.linked > entry:first-child,
+.linked > entry:last-child,
+.linked entry,
+.linked button {
+    border-radius: 0;
+}
+
+scrollbar,
+scrollbar slider,
+scrollbar slider:hover,
+scrollbar slider:active {
+    border-radius: 0;
+}
+
+avatar,
+.avatar {
+    border-radius: 0;
+}
+
+.pill,
+.rounded {
+    border-radius: 0 !important;
+}
+
+/* ============================================
+ * WINDOW CONTROL BUTTONS (FORCE OVERRIDE)
+ * Specifically targets minimize, maximize, close buttons
+ * ============================================ */
+
+/* Force all window control buttons to have no border radius */
+windowcontrols button,
+windowcontrols > button,
+windowcontrols button.close,
+windowcontrols button.maximize,
+windowcontrols button.minimize,
+windowcontrols button.icon,
+headerbar windowcontrols button,
+headerbar windowcontrols > button,
+headerbar > windowcontrols button,
+headerbar > windowcontrols > button,
+.titlebar windowcontrols button,
+.titlebar windowcontrols > button,
+box.titlebar windowcontrols button,
+button.titlebutton,
+button.titlebutton.close,
+button.titlebutton.maximize,
+button.titlebutton.minimize,
+headerbar button.titlebutton,
+headerbar button.close,
+headerbar button.maximize,
+headerbar button.minimize,
+.titlebar button.titlebutton,
+.titlebar button.close,
+.titlebar button.maximize,
+.titlebar button.minimize {
+    border-radius: 0 !important;
+    -gtk-icon-radius: 0;
+}
+
+/* All states for window control buttons */
+windowcontrols button:hover,
+windowcontrols button:active,
+windowcontrols button:focus,
+windowcontrols button:backdrop,
+windowcontrols button:disabled,
+button.titlebutton:hover,
+button.titlebutton:active,
+button.titlebutton:focus,
+button.titlebutton:backdrop,
+button.close:hover,
+button.close:active,
+button.maximize:hover,
+button.maximize:active,
+button.minimize:hover,
+button.minimize:active {
+    border-radius: 0 !important;
+}
+
+/* Adwaita/libadwaita specific overrides */
+.windowhandle,
+.windowhandle button,
+.windowhandle > button,
+headerbar .windowhandle button,
+box.windowhandle button {
+    border-radius: 0 !important;
+}

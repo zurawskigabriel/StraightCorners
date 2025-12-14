@@ -1,0 +1,10 @@
+{
+    "name": "Straight Corners",
+    "description": "Remove rounded corners from windows, buttons, and UI components. Make all corners sharp and straight.",
+    "uuid": "straight-corners@zurawski",
+    "version": 1,
+    "shell-version": ["46"],
+    "settings-schema": "org.gnome.shell.extensions.straight-corners",
+    "url": "https://github.com/zurawski/straight-corners",
+    "gettext-domain": "straight-corners"
+}
